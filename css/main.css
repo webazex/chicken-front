@@ -93,13 +93,15 @@ h4, h4 span {
 	width: 100%;
 	min-height: 196px;
 	height: auto;
-	/*display: grid;*/
-	/*grid-template-columns: repeat(auto-fill, minmax(1fr, 150px));*/
+}
+.main-section-grid-container__text-box h1 {
+
 }
 .main-section-grid-container__text-box h1 span{
 	font-weight: 500;
 	line-height: 98px;
 	color: white;
+	grid-area: t1;
 }
 .main-section-grid-container__text-box h1 span:nth-child(3),
 .main-section-grid-container__text-box h1 span:nth-child(5) {
@@ -109,7 +111,7 @@ h4, h4 span {
 }
 .text-box__desc {
 	position: absolute;
-	max-width: 280px;
+	max-width: 300px;
 	width: 100%;
 	height: auto;
 	min-height: 50px;
@@ -121,6 +123,7 @@ h4, h4 span {
 	font-size: 18px;
 	line-height: 25px;
 	color: white;
+	padding-left: 25px;
 }
 
 .main-section-grid-container__img {
@@ -133,7 +136,7 @@ h4, h4 span {
 	width: 100%;
 	padding-top: 20px;
 	display: grid;
-	grid-template-columns: repeat(2, minmax(250px, 400px));
+	grid-template-columns: repeat(2, minmax(250px, 1fr));
 	grid-gap: 20px;
 	grid-template-areas:
 	"nr mr"
@@ -171,8 +174,8 @@ h4, h4 span {
 	padding: 58px;
 }
 .slide__text-block {
-	min-width: 280px;
-	width: auto;
+	max-width: 320px;
+	width: 100%;
 }
 .slide-title__text {
 	width: 100%;
@@ -196,8 +199,36 @@ h4, h4 span {
 	min-width: 280px;
 	width: 50%;
 }
+.text-block__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	max-width: 200px;
+	height: 50px;
+	border: 1px solid #FFFFFF;
+	border-radius: 15px;
+}
+.link__slide-text {
+	color: white;
+	font-weight: 500;
+	font-size: var(--default-font-size);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.link__slide-text:after {
+	content: '';
+	width: 12px;
+	height: 8px;
+	display: block;
+	background-image: url("../img/Vector 2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+}
 	/*==Products=Section==*/
-.site-size__our-production-container {margin-top: 100px;}
+.site-size__our-production-container {padding-top: 100px;}
 .title-row__link {
 	width: auto;
 	display: flex;
@@ -227,6 +258,10 @@ h4, h4 span {
 }
 .link-color {
 	color: #E50746;
+}
+.content__tabs {
+	padding: 50px 0;
+	border-top: 1px solid #EFEFEF;
 }
 .content__tabs-row {
 	max-width: 568px;
@@ -295,10 +330,11 @@ h4, h4 span {
 	height: auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 335px));
-	grid-auto-rows: minmax(390px, 440px);
+	grid-auto-rows: 390px;
 	grid-gap: 20px;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 40px;
 }
 
 .tab-contents__card {
@@ -425,6 +461,35 @@ h4, h4 span {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+
+/*====receipes==section===*/
+.site-size__default-grid-container {
+	padding: 50px 0;
+	border-top: 1px solid #EFEFEF;
+}
+.site-size__default-grid-container:first-child {
+	border-bottom: none;
+	border-top: 1px solid #EFEFEF;
+}
+.site-size__default-grid-container:last-child {
+	border-top: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+}
+.default-grid-container__title-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.default-grid-container__grid-default {
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 335px));
+	grid-auto-rows: minmax(auto, 370px);
+	justify-content: space-between;
+	align-items: center;
+}
+
 @media (max-width: 1790px) {
 	:root {
 		--container-paddings: 260px;
@@ -433,5 +498,5 @@ h4, h4 span {
 		--h3-font-size: 25px;
 		--h4-font-size: 14px;
 	}
-	.text-box__desc {max-width: 320px;}
+	.text-box__desc {max-width: 280px;}
 }
