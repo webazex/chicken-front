@@ -19,9 +19,8 @@ $(document).ready(function (){
          $('.contact-box__text-desc').css({'text-decoration': 'underline'});
          $('.header-container__logo').attr('src', patchToLogo+'lw.png');
       }
-
    }
-
+   //slider on home
    $('.slider-container__slider').slick(
        {
           infinite: true,
@@ -55,4 +54,5 @@ $(document).ready(function (){
           ]
        }
    );
+
 });
