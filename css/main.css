@@ -90,9 +90,7 @@ h4, h4 span {
 }
 
 .main-section-grid-container__text-box {
-	width: 100%;
-	min-height: 196px;
-	height: auto;
+	width: fit-content;
 }
 .main-section-grid-container__text-box h1 {
 
@@ -489,7 +487,26 @@ h4, h4 span {
 	justify-content: space-between;
 	align-items: center;
 }
+.receipes__info {
+	width: 100%;
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px;
+	background-color: white;
+}
+.info__title-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.title-row__text {
+	font-weight: 500;
+	font-size: var(--default-font-size);
+	color: #232323;
 
+}
 @media (max-width: 1790px) {
 	:root {
 		--container-paddings: 260px;
