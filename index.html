@@ -709,15 +709,18 @@
 							або перейдіть до розділу контаків та сконтактуйте
 							з нами самостійно
 						</p>
-						<form>
+						<form class="form-column__c-form" id="c-form" method="post">
 							<label for="fio">
 								<input name="fio" id="fio" placeholder="Ваше імя">
+								<span class="h-t-placeholder">Ваше імя</span>
 							</label>
 							<label for="email">
 								<input name="email" id="email" placeholder="Ваш email">
+								<span class="h-t-placeholder">Ваш email</span>
 							</label>
 							<label for="email">
 								<input name="email" id="phone" placeholder="Номер телефону">
+								<span class="h-t-placeholder">Номер телефону</span>
 							</label>
 							<textarea placeholder="Повідомлення тут...">
 
@@ -736,7 +739,11 @@
 	</main>
 	<footer>
 		<div class="site-size">
-			<div class="site-size__footer-container"></div>
+			<div class="site-size__footer-container">
+				<img src="img/lb.png" alt="" class="footer-container__logo">
+				<div class="footer-container__col"></div>
+				<div class="footer-container__col"></div>
+			</div>
 		</div>
 	</footer>
 	<script src="js/jQuery360.js"></script>
