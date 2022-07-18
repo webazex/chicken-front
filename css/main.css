@@ -869,9 +869,54 @@ footer {
 	background-color: #F0F0F0;
 	border-radius: 15px 15px 0px 0px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	/*grid-template-columns: repeat(3, minmax(280px, 1fr));*/
+	justify-content: space-between;
+	grid-template-columns: repeat(3, minmax(auto, 320px));
 }
+.footer-container__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.footer-container__logo {
+	width: 138px;
+	height: 50px;
+}
+.col__row-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 40px;
+}
+.col__row-box:last-child {
+	margin-bottom: 0px;
+}
+.row-box__title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	color: #676767;
+	margin-bottom: 15px;
+}
+.col__row-box a, .col__row-box p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	color: #0036A0;
+	margin-bottom: 10px;
+}
+.social-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 44px);
+	grid-auto-rows: 44px;
+	grid-gap: 15px;
+}
+.social-row__icon {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/facebook.png");
+}
+.social-row .social-row__icon {margin: 0;}
+.col__row-box a:last-child {margin-bottom: 0}
 @media (max-width: 1790px) {
 	:root {
 		--container-paddings: 260px;
