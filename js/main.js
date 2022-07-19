@@ -55,4 +55,11 @@ $(document).ready(function (){
        }
    );
 
+   const path = $('path');
+   path.click(function (e){
+      console.log(e.target);
+      path.removeClass('active');
+      $(this).addClass('active');
+   })
+
 });

@@ -783,6 +783,7 @@ h4, h4 span {
 	min-height: 220px;
 }
 .item-card__title {
+	margin-top: 50px;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 17px;
