@@ -62,4 +62,11 @@ $(document).ready(function (){
       $(this).addClass('active');
    })
 
+   $('.filter__text-row').click(function (){
+      if(($(this).siblings('.filters__filter-form')).is(':visible')){
+         $(this).siblings('.filters__filter-form').removeClass('open');
+      }else{
+         $(this).siblings('.filters__filter-form').addClass('open');
+      }
+   });
 });
