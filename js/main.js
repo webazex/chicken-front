@@ -59,7 +59,7 @@ $(document).ready(function (){
 
    const path = $('path');
    path.click(function (e){
-      console.log(e.target);
+      // console.log(e.target);
       path.removeClass('active');
       $(this).addClass('active');
    })
@@ -70,5 +70,15 @@ $(document).ready(function (){
       }else{
          $(this).siblings('.filters__filter-form').addClass('open');
       }
+   });
+
+   $('.tabs-row__tab').click(function (){
+      $('.tabs-row__tab').removeClass('this-tab');
+      $(this).addClass('this-tab');
+   });
+
+   $('.subtabs__subtab').click(function (){
+      $('.subtabs__subtab').removeClass('current');
+      $(this).addClass('current');
    });
 });

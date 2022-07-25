@@ -439,9 +439,28 @@ h4, h4 span {
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
-	/*opacity: 0.5;*/
+	align-items: center;
+	/*align-items: flex-start;*/
+	opacity: 0.5;
 	margin-right: 35px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.tab__text {
+	font-weight: 500;
+	font-size: var(--default-font-size);
+	opacity: 0.5;
+	color: #E50746;
+}
+.this-tab .tab__text {
+	opacity: 1;
+}
+.tabs-row__tab svg {
+	margin-right: 10px;
+}
+.tabs-row__tab.this-tab {
+	opacity: 1;
+	border-bottom: 2px solid #E50746;
 }
 .tabs-row__tab:last-child {
 	margin-right: 0;
@@ -578,19 +597,19 @@ h4, h4 span {
 	align-items: center;
 }
 .tab-contents__card:hover .properties__property-row:last-child,
-.tab-contents__card:hover .card__more
-{
-	transition: all 0.5s ease-in-out;
-	width: 100%;
-	visibility: visible;
-	height: auto;
-	opacity: 1;
-}
-.tab-contents__card:hover .card__more {
-	margin-top: 20px;
-	padding-top: 19px;
-	border-top: 1px solid #E8E8E8;
-}
+/*.tab-contents__card:hover .card__more*/
+/*{*/
+/*	transition: all 0.5s ease-in-out;*/
+/*	width: 100%;*/
+/*	visibility: visible;*/
+/*	height: auto;*/
+/*	opacity: 1;*/
+/*}*/
+/*.tab-contents__card:hover .card__more {*/
+/*	margin-top: 20px;*/
+/*	padding-top: 19px;*/
+/*	border-top: 1px solid #E8E8E8;*/
+/*}*/
 .property-row__property, .row__value, .box__property-name {
 	font-weight: 400;
 	font-size: 14px;
