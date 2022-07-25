@@ -129,7 +129,7 @@ h4, h4 span {
 	justify-content: space-between;
 	align-items: center;
 }
-
+.header-container__lang-switcher {display: none;}
 .header-container__burger, .header-container__search-box {
 	width: 34px;
 	height: 34px;
@@ -146,8 +146,9 @@ h4, h4 span {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	order: 6;
-	margin-right: 50px;
+	order: unset;
+	margin-left: auto;
+	margin-right: auto;
 }
 .header-container__burger span {
 	width: 100%;
