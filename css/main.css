@@ -510,14 +510,14 @@ h4, h4 span {
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: 390px;
 	grid-gap: 20px;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	align-items: center;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .tab-contents__card {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	background-color: white;
@@ -525,6 +525,22 @@ h4, h4 span {
 	border-radius: 10px;
 	padding: 58px;
 }
+.tab-contents__card:hover {
+	border: 1px solid #E8E8E8;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+}
+.tab-contents__card:hover .card__title{
+	margin-top: 20px;
+}
+.properties__property-row:last-child {
+	display: none;
+}
+.tab-contents__card:hover .properties__property-row:last-child {
+	display: flex;
+}
+
 .card__image {width: 100%;}
 .card__marks {
 	width: 32px;
@@ -577,39 +593,29 @@ h4, h4 span {
 	justify-content: space-between;
 	align-items: center;
 }
-.properties__property-row:last-child, .card__more{
-	transition: all 0.5s ease-in-out;
-	display: flex;
-	width: 0;
-	height: 0;
-	opacity: 0;
-	visibility: hidden;
-}
 .properties__property-row:last-child {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 15px;
 }
 .card__more {
-	display: flex;
-	margin-top: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: white;
+	display: none;
+	padding: 15px 58px;
 	justify-content: space-between;
 	align-items: center;
+	/*border-top: 1px solid #E8E8E8;*/
+	border: 1px solid #E8E8E8;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	top: 100%;
+	z-index: 1;
 }
-.tab-contents__card:hover .properties__property-row:last-child,
-/*.tab-contents__card:hover .card__more*/
-/*{*/
-/*	transition: all 0.5s ease-in-out;*/
-/*	width: 100%;*/
-/*	visibility: visible;*/
-/*	height: auto;*/
-/*	opacity: 1;*/
-/*}*/
-/*.tab-contents__card:hover .card__more {*/
-/*	margin-top: 20px;*/
-/*	padding-top: 19px;*/
-/*	border-top: 1px solid #E8E8E8;*/
-/*}*/
+
+.tab-contents__card:hover .card__more {display: flex;}
 .property-row__property, .row__value, .box__property-name {
 	font-weight: 400;
 	font-size: 14px;
@@ -1197,7 +1203,10 @@ footer {
 		line-height: 140%;
 	}
 	.recipes-grid-container__new-receipes, .recipes-grid-container__marked-receipes {height: 324px;}
-	.tabs__tab-contents {justify-content: flex-start;}
+	.tabs__tab-contents {
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: flex-start;
+	}
 }
 @media (max-width: 1369px){
 	:root {
@@ -1210,7 +1219,7 @@ footer {
 	.text-box__desc {max-width: 240px;}
 	.tabs__tab-contents {
 		/*grid-template-columns: repeat(auto-fill, minmax(auto, 280px));*/
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		/*justify-content: space-between;*/
 	}
 }
