@@ -81,4 +81,13 @@ $(document).ready(function (){
       $('.subtabs__subtab').removeClass('current');
       $(this).addClass('current');
    });
+
+   $('.contact-box__text-desc').click(function (){
+      $('.popups').css({'display': 'flex'});
+      $('.popups__callback-form').css({'display': 'block'});
+   });
+   $('.callback-form__close').click(function (){
+      $('.popups').css({'display': 'none'});
+      $('.popups__callback-form').css({'display': 'none'});
+   });
 });
