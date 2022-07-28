@@ -285,11 +285,12 @@ header.main .contact-box__text-desc {
 	grid-area: mr;
 }
 .new-receipes__img, .marked-receipes__img {
-	position: absolute;
-	width: 50%;
-	left: 0;
-	bottom: 0;
-	border-radius: 15px;
+	/*position: absolute;*/
+	/*width: 50%;*/
+	/*left: 0;*/
+	/*bottom: 0;*/
+	/*border-radius: 15px;*/
+	height: 100%;
 }
 .new-receipes__img.so, .marked-receipes__img.so {
 	position: absolute;
@@ -1105,6 +1106,18 @@ footer {
 	justify-content: flex-start;
 	align-items: center;
 }
+.filters-row__group {
+	width: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.filters-row__group .filters-row__filters {
+	width: auto;
+	margin-right: 25px;
+}
+.filters-row__group .filters-row__filters:last-child {
+	margin-right: 0;}
 .filters__filter-form {
 	position: absolute;
 	z-index: 1;
