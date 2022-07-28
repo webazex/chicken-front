@@ -1414,6 +1414,29 @@ footer {
 	right: 30px;
 	cursor: pointer;
 }
+
+.soc h2 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: var(--h2-font-size);
+	line-height: 150%;
+	/* identical to box height, or 66px */
+	text-align: center;
+	color: #232323;
+	width: 100%;
+	margin-bottom: 90px;
+}
+.site-size__grid-soc-content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(280px, 1fr));
+	grid-auto-rows: auto;
+	grid-column-gap: 90px;
+	grid-row-gap: 30px;
+}
+.grid-soc-content__text-block h3 {
+
+}
 @media (max-width: 1790px) {
 	:root {
 		--container-paddings: 260px;
