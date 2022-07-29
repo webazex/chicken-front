@@ -1462,6 +1462,14 @@ footer {
 	line-height: 150%;
 	/* identical to box height, or 42px */
 	color: #232323;
+	margin-bottom: 20px;
+}
+.row-content__text-block p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: var(--default-font-size);
+	line-height: 170%;
+	color: #676767;
 }
 .soc-content__row-content:nth-child(even) img {
 	order: 1;
