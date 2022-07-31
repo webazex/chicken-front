@@ -1554,6 +1554,11 @@ article p:last-child {
 	font-size: var(--default-font-size);
 	color: #E50746;
 }
+.recents-section h2 {
+	font-style: normal;
+	font-weight: 500;
+	font-size: var(--h3-font-size);
+}
 .recents-section__grid-posts {
 	width: 100%;
 	display: grid;
